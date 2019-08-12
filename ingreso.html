@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="icons/fonts.css">
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <title>Sumate</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu_bar">
+      <a href="#" class="btn-menu"><span class="icon-stack"></span>Menu</a>
+    </div>
+    <nav class="container">
+      <ul>
+        <li><a href="index.html"><span class="icon-home3"></span> Inicio</a></li>
+        <li><a href="rubros.html"><span class="icon-newspaper"></span> Rubro</a></li>
+        <li><a href="ingreso.html"><span class="icon-pencil"></span> Sumate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <form action="" class="formulario">
+      <h1 class="sumate">SUMATE AL SITIO!</h1>
+      <div class="form-group row">
+        <label class="form-label">Nombre Del Comercio:</label>
+        <input type="text" class="form-control form-control-lg " name="nombreCo" id="nombreCo">
+      </div>
+      <div class="form-group row">
+        <label class="form-label">Rubro:</label>
+        <select name="rubro" class="form-control form-control-lg " id="rubro">
+          <option value="0">Elija una Categoria... </option>
+          <option value="gastronomia">Gastronomia</option>
+          <option value="indumentaria">Indumentaria</option>
+          <option value="salud">Salud</option>
+          <option value="hogar">Hogar</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label class="form-label">Teléfono:</label>
+        <input type="text" class="form-control form-control-lg " id="telefono">
+      </div>
+      <div class="form-group row">
+        <label class="form-label">Inicio de Actividades:</label>
+        <input type="number" class="form-control form-control-lg " id="inicio-act" min="1990">
+      </div>
+      <div class="form-group row">
+        <label class="form-label">Breve descripción:</label>
+        <textarea name="descripcion" class="form-control form-control-lg " id="descripcion" rows="5" cols="20"></textarea>
+      </div>
+      <div class="form-group row">
+        <button type="button" title="Agregar Negocio" class="btn btn-outline-light boton" onclick="agregarNegocio()">ENVIAR</button>
+        <div class="clearfix"></div>
+      </div>
+    </form>
+    <div id="mensajes" class="mensajes"></div>
+    <div id="resultado" class="resultado"></div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <a href="#"><span class="col-md-3 icon-facebook2"></span></a>
+        <a href="#"><span class="col-md-3 icon-instagram"></span></a>
+        <a href="#"><span class="col-md-3 icon-linkedin"></span></a>
+        <a href="#"><span class="col-md-3 icon-whatsapp"></span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="vendor/jQuery/jquery.js" type="text/javascript"></script>
+  <script src="js/menu.js" type="text/javascript"></script>
+  <script src="js/code.js" type="text/javascript"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

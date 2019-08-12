@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url("../img/fondo.jpg") no-repeat fixed center center;
+  background-size: cover;
+
+}
+
+.loader {
+  background-image: url("../img/fondo1.jpg");
+  opacity: 0.9;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.load{
+  left: 50%;
+  top: 50%;
+  margin-left: 440px;
+  margin-top: 10px;
+  width: 500px;
+
+}
+
+
+/*---------------------------------MENU----------------------------------------------*/
+header{
+  width: 100%;
+  background-color: #07033ad7;
+  top:0px;
+}
+header nav{
+
+  width:90%;
+  max-width:1000px; 
+  margin: 0px auto 20px; 
+}
+.menu_bar{
+  display: none;
+  
+}
+header nav ul{
+ overflow: hidden; 
+ list-style: none;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a{
+  color: white;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: georgia;
+}
+header nav ul li span {
+margin-right: 10px;
+}
+header nav ul li a:hover{
+  background-color: #39a9c2;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+/*---------------- Articulo parrafo1--------------------- */
+
+.parrafo-1{
+  font-size: 22px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times;
+}
+.main-row{
+  background-color: #3e75b3da;
+  padding:  20px 20px 20px 20px;
+  border-radius: 5px;
+  margin: 10%;
+  -webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+  box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+}
+article p{
+margin-bottom:0px;
+}
+article a{
+  color: white;
+}
+article a:hover{
+  text-decoration: none;
+  color: crimson;
+}
+/* --------------------rubros----------------------------------------------------------- */
+
+.rubros{
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.text-rubro{
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times;
+  margin-top: 10px;
+}
+.cont-rubro{
+  padding: 15px;
+}
+.img-fluid{
+-webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+border-radius: 5px;
+}
+
+
+/*---------------------------FORM-------------------------------------------------------*/
+
+.sumate{
+  text-align: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times;
+  margin: 20px;
+}
+img{
+  width: 230px;
+  height: 230px;
+  max-width: 100%;
+  height: auto;
+
+}
+
+.form-label{
+  display: inline;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+.formulario{
+  background-color: #3e75b3da;
+  height: auto;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  -webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
+}
+.boton{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* ---------------------------------PIE DE PAGINA ---------------------- */
+footer{
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  background-color:#39a9c2;
+}
+
+footer .container .row a{
+  color: white;
+  padding: 20px;
+  display: grid;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: georgia;
+}
+footer .container .row a:hover{
+  text-decoration: none;
+  background-color: #07033ad7;
+  
+}
+
+/* -------------------MEDIA QUERY-------------------- */
+@media screen and (max-width:900px) {
+
+  header .container{
+    padding-left: 0px;
+  }
+  
+  header nav{
+    width: 40%;
+    height: 100%;
+    top: -100%;
+    margin: 0%;
+    position: absolute;
+    z-index: 1;
+
+  }
+  header nav ul li{
+    display: block;
+    float:none;
+    border-bottom:1px solid #97c0f7d2;
+    background-color: #07033ad7;
+    padding-left: 0px;
+  }
+
+  .menu_bar{
+    display:block;
+    width: 100%;
+    background-color: #07033aec;
+    position: relative;
+    z-index: 2;
+    
+
+  }
+  .menu_bar .btn-menu{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .menu_bar span {
+    float: right;
+    font-size: 30px;
+  }
+
+  .parrafo-1{
+    font-size: 16px;
+    text-align: left;
+
+  }
+  .form-label{
+    font-size: 15px;
+  }
+
+  .sumate{
+    font-size: 30px;
+  }
+}
