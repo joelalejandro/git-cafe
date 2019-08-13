@@ -58,7 +58,7 @@ header nav ul li a{
   font-family: georgia;
 }
 header nav ul li span {
-margin-right: 10px;
+  margin-right: 10px;
 }
 header nav ul li a:hover{
   background-color: #39a9c2;
