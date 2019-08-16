@@ -28,34 +28,43 @@
   <div class="container">
     <form action="" class="formulario">
       <h1 class="sumate">SUMATE AL SITIO!</h1>
-      <div class="form-group row">
-        <label class="form-label">Nombre Del Comercio:</label>
-        <input type="text" class="form-control form-control-lg " name="nombreCo" id="nombreCo">
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="label-texto">Nombre Del Comercio:</label>
+          <input type="text" class="form-control" name="nombreCo" id="nombreCo">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="label-texto">Rubro:</label>
+          <select name="rubro" class="form-control" id="rubro">
+            <option value="0">Elija una Categoria... </option>
+            <option value="gastronomia">Gastronomia</option>
+            <option value="indumentaria">Indumentaria</option>
+            <option value="salud">Salud</option>
+            <option value="hogar">Hogar</option>
+          </select>
+        </div>
       </div>
-      <div class="form-group row">
-        <label class="form-label">Rubro:</label>
-        <select name="rubro" class="form-control form-control-lg " id="rubro">
-          <option value="0">Elija una Categoria... </option>
-          <option value="gastronomia">Gastronomia</option>
-          <option value="indumentaria">Indumentaria</option>
-          <option value="salud">Salud</option>
-          <option value="hogar">Hogar</option>
-        </select>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="label-texto">Teléfono:</label>
+          <input type="text" class="form-control" id="telefono">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="label-texto">Inicio de Actividades:</label>
+          <input type="" class="form-control" id="inicio-act" min="1990">
+        </div>
       </div>
-      <div class="form-group row">
-        <label class="form-label">Teléfono:</label>
-        <input type="text" class="form-control form-control-lg " id="telefono">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label class="label-texto">Breve descripción:</label>
+          <textarea name="descripcion" class="form-control" id="descripcion" rows="5" cols="20"></textarea>
+        </div>
       </div>
-      <div class="form-group row">
-        <label class="form-label">Inicio de Actividades:</label>
-        <input type="number" class="form-control form-control-lg " id="inicio-act" min="1990">
-      </div>
-      <div class="form-group row">
-        <label class="form-label">Breve descripción:</label>
-        <textarea name="descripcion" class="form-control form-control-lg " id="descripcion" rows="5" cols="20"></textarea>
-      </div>
-      <div class="form-group row">
-        <button type="button" title="Agregar Negocio" class="btn btn-outline-light boton" onclick="agregarNegocio()">ENVIAR</button>
+      <div class="form-row">
+        <button type="button" title="Agregar Negocio" class="btn btn-outline-light boton"
+          onclick="agregarNegocio()">ENVIAR</button>
         <div class="clearfix"></div>
       </div>
     </form>

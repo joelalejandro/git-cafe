@@ -58,7 +58,7 @@ header nav ul li a{
   font-family: georgia;
 }
 header nav ul li span {
-  margin-right: 10px;
+margin-right: 10px;
 }
 header nav ul li a:hover{
   background-color: #39a9c2;
@@ -123,7 +123,8 @@ border-radius: 5px;
   text-align: center;
   color: white;
   font-family: Georgia, 'Times New Roman', Times;
-  margin: 20px;
+  margin: 10px;
+  font-size: 30px;
 }
 img{
   width: 230px;
@@ -132,34 +133,40 @@ img{
   height: auto;
 
 }
-
-.form-label{
-  display: inline;
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing:1px;
+.form-row{
+  margin: 10px;
 }
+
+.label-texto{
+
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ 
+  
+} 
 .formulario{
   background-color: #3e75b3da;
   height: auto;
   padding-top: 5%;
-  padding-right: 10%;
+  padding-right: 5%;
   padding-bottom: 5%;
-  padding-left: 10%;
+  padding-left: 5%;
   border-radius: 5px;
-  width: 50%;
+  width: 75%;
   margin: auto;
   -webkit-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
   box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
 }
+
 .boton{
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ---------------------------------PIE DE PAGINA ---------------------- */
@@ -238,11 +245,14 @@ footer .container .row a:hover{
     text-align: left;
 
   }
-  .form-label{
-    font-size: 15px;
+  .label-texto{
+    font-size: 12px;
   }
 
   .sumate{
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .formulario{
+    width: 90%;
   }
 }
