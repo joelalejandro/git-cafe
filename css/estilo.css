@@ -120,13 +120,13 @@ border-radius: 5px;
   -ms-transition:all .9s ease; 
 }
 
-.img-fluid:hover{
+/* .img-fluid:hover{
   -webkit-transform:scale(1.10);
   -moz-transform:scale(1.10);
   -ms-transform:scale(1.10);
   -o-transform:scale(1.10);
   transform:scale(1.10);
-}
+} */
 
 
 
