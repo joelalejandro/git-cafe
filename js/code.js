@@ -1,8 +1,8 @@
 var inputNombreCo = document.getElementById("nombreCo");
 var selectRubro = document.getElementById("rubro");
-var imputDomicilio = document.getElementById("domicilio");
+var imputTelefono = document.getElementById("telefono");
 var imputInicioAc = document.getElementById("inicio-act");
-var alertaMensaje =document.getElementById("mensaje")
+var alertaMensaje =document.getElementById("mensajes")
 var cantidadComercio = "";
 var mostrarResul = document.getElementById("resultado")
 var comercioGastron =  "";
@@ -11,45 +11,36 @@ var promedioAnosInc = "";
 
 var ingresos=[];
 
-function Ingreso(nombre, rubro, domicilio, inicioAc){
+function Ingreso(nombre, rubro, telefono, inicioAc){
   this.nombre = nombre;
   this.rubro = rubro;
-  this.domicilio = domicilio;
+  this.telefono = telefono;
   this.inicioAc = parseInt(inicioAc);
 }
 
 function agregarNegocio(){
   var nombre = inputNombreCo.value;
   var rubro = selectRubro.value;
-  var domicilio = imputDomicilio.value;
+  var telefono = imputTelefono.value;
   var inicioAc = imputInicioAc.value;
 
-  var ingreso = new Ingreso(nombre, rubro, domicilio, inicioAc)
+  var ingreso = new Ingreso(nombre, rubro, telefono, inicioAc)
 
   ingresos.push(ingreso);
 
   inputNombreCo.value = "";
   selectRubro.value = "";
-  imputDomicilio.value ="";
+  imputTelefono.value ="";
   imputInicioAc.value = "";
 
   //validaciones---------------
   alertaMensaje.innerText=""; 
   alertaMensaje.style.visibility = "hidden";
-  var mensaje = "";
+  
 
-  if(nombre ==""){
-     mensaje = mensaje + "Ingresar nombre.\n";
+  if(nombre ==""||telefono==""||rubro=="0"||inicioAc==""){
+     var mensaje ="*Ingresar todos los campos";
     }
-  if(domicilio==""){
-    mensaje = mensaje + "Ingresar Domicilio.\n";
-  }
-  if(rubro=="0"){
-    mensaje = mensaje + "seleccione un Rubro.\n"
-  }
-  if(inicioAc==""){
-    mensaje = mensaje + "Ingresar Fecha de Inicio De Actividades.\n";
-  }
   if(mensaje != "") {
     alertaMensaje.innerText=mensaje; 
     alertaMensaje.style.visibility = "visible";

@@ -114,7 +114,20 @@ article a:hover{
 -moz-box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
 box-shadow: 4px 5px 5px -2px rgba(0,0,0,0.75);
 border-radius: 5px;
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; 
 }
+
+.img-fluid:hover{
+  -webkit-transform:scale(1.10);
+  -moz-transform:scale(1.10);
+  -ms-transform:scale(1.10);
+  -o-transform:scale(1.10);
+  transform:scale(1.10);
+}
+
 
 
 /*---------------------------FORM-------------------------------------------------------*/
@@ -172,7 +185,7 @@ img{
 /* ---------------------------------PIE DE PAGINA ---------------------- */
 footer{
   bottom: 0px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background-color:#39a9c2;
 }
